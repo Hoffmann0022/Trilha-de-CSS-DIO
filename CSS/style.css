@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+h2{/*subtitulos*/
+    font-size: 2rem;
+    font-weight: 600;
+    color:#33A8DB;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h5{/*textos*/
+    color:rgba(255, 255, 255, 1);
+    font-size:1rem;
+    margin: 20px;
+    font-weight: 300;
+}
+
+
+/*Cabeçalho*/
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 590px;
+    background: url(../IMG/banner.png),linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(4, 92, 129, 0) 100%), linear-gradient(to top, rgb(0, 0, 0) 0%, rgb(32, 132, 175) 100%);
+    border-bottom: 1px solid rgba(51, 168, 219, 1);
+}
+
+.logo{/*logo da trilha de css*/
+    padding: 20px;
+    width: 268px;
+    height: 268px;
+    background-color: rgba(0, 0, 0, 0.281);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px 10px 0px;
+}
+
+.header-content{/*div do conteudo*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto ;
+    width: 510px;
+    height: 393px;
+    text-align: center;
+}
+
+header h1{/*titulo*/
+    font-size: calc(2rem + 8px);
+    font-weight: 900;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    background-clip:text;
+    color: transparent;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+}
+
+header h5{/*texto*/
+    color:rgba(255, 255, 255, 1);
+    font-size: calc(1rem + 3px);
+    margin: 20px;
+    font-weight: 400;
+}
+
+header button{/*botão*/
+    width: auto;
+    padding: 15px 50px;
+    border: 2px solid;
+    border-image:linear-gradient( #33A8DB, #1472B7 ) 1 ;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: transparent;
+    color: #33A8DB;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+header button:hover{/*efeito 'hover' no botão*/
+    border: 0;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%) ;
+    color: black;   
+}
+
+/*Seção "Aprendizagem"*/
+
+.aprendizagem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 590px;
+    background-color: rgb(0, 3, 7);
+    border-bottom: 1px solid rgba(51, 168, 219, 1);
+}
+
+.aprender-content{/*div com o conteudo*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px auto ;
+    width: 810px;
+    height: 393px;
+    text-align: center;
+}
+
+.modulos{/*cards 'modulos'*/
+    background-color: rgba(37, 37, 37, 1);
+    width: 500px;
+    height: 50px;
+    margin: 15px;
+    padding: 15px 0px 10px 0px;
+    border: 1px solid rgba(51, 168, 219, 1);
+    border-radius: 57px;
+    box-shadow: inset -2px 6px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 300;
+}
+
+.modulos span{/*titulos dos modulos*/
+    color: rgba(51, 168, 219, 1);
+}
+
+/*Seção "Fundo paralax*/
+
+.img_paralax{/*imagem de fundo do paralax*/
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background-image: url(../IMG/woman-code.png), linear-gradient(black, black);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid rgba(51, 168, 219, 1);
+    background-attachment:fixed;
+}
+
+.img_paralax h3{/*texto da seção*/
+    color: rgba(255, 255, 255, 1);
+    font-size: calc(2rem + 10px);
+    font-weight: 900;
+    margin: 100px 200px;
+    text-shadow: 3px 2px 0 rgba(51, 168, 219, 1);
+}
+
+/*Seção "Do carinha estudando"*/
+
+.evolua{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 790px;
+    background-color: rgb(0, 3, 7);
+    border-bottom: 1px solid rgba(51, 168, 219, 1);
+}
+
+.evolua-content{/*div com o conteudo*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px auto ;
+    width: 810px;
+    height: 593px;
+    text-align: center;
+}
+
+/*rodape*/
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(4, 92, 129, 0.404) 100%), linear-gradient(to top, rgb(0, 0, 0) 100%, rgba(32, 132, 175, 0) 0%);
+}
+
+.footer-content{
+    margin: 70px 0px 40px 0px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-weight: 300;
+}
+
+.footer-content a{
+    color: #33A8DB;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+}
+
+/*Responsividade para celular*/
+
+@media only screen and (max-width: 600px){
+
+    h2{/*subtitulos*/
+        font-size: 22px;
+        font-weight: 500;
+        color:#33A8DB;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    
+    h5{/*textos*/
+        color:rgba(255, 255, 255, 1);
+        font-size:12px;
+        margin: 15px;
+        font-weight: 300;
+    }
+
+    /*Cabeçalho*/
+
+    header{
+        height: 510px;
+    }
+
+    .logo img{
+        width: 130px;
+    }
+
+    .logo {/*logo da trilha de css*/
+        width: 150px;
+        height: 150px;
+        margin: 30px 0px 10px 0px;
+    }
+
+    .header-content{/*div do conteudo*/
+        width: 270px;
+    }
+
+    header h1{/*titulo*/
+        font-size: calc(1rem + 10px);
+    }
+
+    header h5{/*texto*/
+        font-size: calc(1rem);
+        margin: 40px 0px;
+    }
+
+    header button{/*botão*/
+        padding: 15px 20px;
+        letter-spacing: 1px;
+    }
+
+    /*Seção "Aprendizagem"*/
+
+    .aprendizagem{
+        height: 510px;
+    }
+
+    .aprender-content{/*div com o conteudo*/
+        margin: 70px auto ;
+        width: 270px;
+    }
+
+    .modulos{/*cards 'modulos'*/
+        width: 280px;
+        font-size: 12px;
+    }
+
+
+    /*Seção "Fundo paralax*/
+
+    .img_paralax h3{/*texto da seção*/
+        color: rgba(255, 255, 255, 1);
+        font-size: calc(2rem + 15px);
+        font-weight: 900;
+        text-align: left;
+        margin: auto;
+    }
+
+    /*Seção "Do carinha estudando"*/
+
+    .evolua{
+        height: 570px;
+    }
+
+    .evolua-content{/*div com o conteudo*/
+        width: 280px;
+    }
+
+    .evolua-content img{
+        width: 300px;
+    }
+
+    /*rodape*/
+
+    .footer-content{
+        margin: 30px 0px 20px 0px;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        font-weight: 300;
+        font-size: 13px;
+    }
+
+    .footer-content img{
+        width: 200px;
+    }
+
+    .footer-content a{
+        color: #33A8DB;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .footer-content a:hover{
+        text-decoration: underline;
+    }
+}
+
+/*responsividade para tablets*/
+
+@media only screen and (min-width: 601px) and (max-width: 1199px){
+
+    h2{/*subtitulos*/
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 5px;
+    }
+    
+    h5{/*textos*/
+        font-size:1rem;
+        margin: 20px;
+    }
+
+    /*Cabeçalho*/
+
+    header{
+        height: 590px;
+    }
+
+    .logo img{
+        width: 160px;
+    }
+
+    .logo {/*logo da trilha de css*/
+        width: 190px;
+        height: 190px;
+        margin: 50px 0px 10px 0px;
+    }
+
+    .header-content{/*div do conteudo*/
+        width: 450px;
+    }
+
+    header h1{/*titulo*/
+        font-size: calc(2rem + 8px);
+    }
+
+    header h5{/*texto*/
+        font-size: calc(1rem + 3px);
+        margin: 40px 0px;
+    }
+
+    header button{/*botão*/
+        padding: 15px 20px;
+        letter-spacing: 1px;
+    }
+
+    /*Seção "Aprendizagem"*/
+
+    .aprendizagem{
+        height: 550px;
+    }
+
+    .aprender-content{/*div com o conteudo*/
+        margin: 70px auto ;
+        width: 470px;
+    }
+
+    .modulos{/*cards 'modulos'*/
+        width: 450px;
+        font-size: 1rem;
+    }
+
+
+    /*Seção "Fundo paralax*/
+
+    .img_paralax h3{/*texto da seção*/
+        color: rgba(255, 255, 255, 1);
+        font-size: calc(2rem + 30px);
+        font-weight: 900;
+        text-align: left;
+        margin: auto;
+    }
+
+    /*Seção "Do carinha estudando"*/
+
+    .evolua{
+        height: 730px;
+    }
+
+    .evolua-content{/*div com o conteudo*/
+        width: 570px;
+    }
+
+    .evolua-content img{
+        width: 500px;
+    }
+
+    /*rodape*/
+
+    .footer-content{
+        margin: 50px 0px 40px 0px;
+        font-size: 1rem;
+        flex-direction: row;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .footer-content img{
+        width: 250px;
+        margin-right: 50px;
+    }
+
+    .footer-content a{
+        color: #33A8DB;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .footer-content a:hover{
+        text-decoration: underline;
+    }
+}
